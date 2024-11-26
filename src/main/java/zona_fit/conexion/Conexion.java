@@ -6,10 +6,10 @@ import java.sql.DriverManager;
 public class Conexion {
     public static Connection getConexion(){
         Connection conexion = null;
-        var baseDatos = "zona_fit_db";
+        var baseDatos = "name_database";
         var url = "jdbc:mysql://localhost:3306/" + baseDatos;
-        var usuario = "ld4ni";
-        var password = "Inicio1234";
+        var usuario = "username_database";
+        var password = "password";
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             conexion = DriverManager.getConnection(url, usuario, password);
